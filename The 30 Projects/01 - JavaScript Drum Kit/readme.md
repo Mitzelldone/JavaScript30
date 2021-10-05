@@ -7,8 +7,26 @@
 - Playing audio
 - Transitionend event
 - Dealing with animation
-- Listen for animation and event
+- Listen for animation end event
 ## Guide
+We are provided with the HTML, CSS, and sound clips necessary to create this
+  page/application. Let's go over the provided files and look at the pieces
+  that we can utilize to fulfill the requirements:
+
+- HTML `data-*` attributes: Introduced in HTML5, `data-*` attributes (where * can
+    be anything you want) allow us to store _custom data_ on any HTML element. Each
+    `div.key` (`<div class="key" data-key="...">`) and `audio` element in the 
+    provided HTML file has a `data-key` attribute which corresponds with a keyboard button.
+
+- CSS `playing` class & pre-defined style: The provided CSS file already has a `playing`
+    class defined with some rules in it. We will apply this class to the correct
+    element, depending on the key pressed by the user, and remove it once animation
+    is finished.
+
+And that's...pretty much all we should need from the HTML & CSS files. We can use
+  the `data-key` attributes to match up the correct audio clip with the div element,
+  and we can use the `playing` class to add that temporary highlight/border.
+ ### Steps: 
 #### 1. Add an event to our keys when they are pressed.
 `window.addEventListener('keydown', playSound)`
 
@@ -24,9 +42,9 @@ function playSound(e) {
   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
   if(!audio) return;
   
-  key.classList.add('playing');
   audio.currentTime = 0;
   audio.play();
+  key.classList.add('playing');
 }
 
 ```
@@ -45,24 +63,29 @@ In the body of the function, declare and define two variables that will referenc
 How do we prevent delay playing sound, if we keep hitting a key?
   - just add `audio.currentTime = 0;` before `audio.play();`
   - `audio.currentTime = 0` rewind to the start.
-
-#### 3.  Transitionend Event
-### Toggling styles
-
-- use `item.classList.add('className')` to add class when key pressed. (same as `element.addClass('className')` in jQuery)
-
-- use `transitionend` event to remove `play` class. since we want to just remove `transform` property, so add a condition to skip others.
-
+  - `key.classList.add('playing')` for animation(transition).
+#### 3. Declare & define a variable which will reference all the HTML elements on our page with a class `key`.
 ```
-if(e.propertyName != 'transform') return;
-this.classList.remove('playing'); // `event.target.classList.remove('playing');`
+const keys = document.querySelectorAll('.keys');
 ```
 
-### forEach and Arrow function
-
+#### 4. Iterate through the HTML elements and add an _event listener_ to each one that will fire on the `transitionend` event. Provide another function (name of your choice) as the second argument which will be responsible for **removing** the `playing` class.
+  ```
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  ```
 - `items.forEach()` instead of just `forEach`, which means it's a property of an array.
 
-- Arrow functions is ES6 syntax,
+- `=>` is ES6 syntax.
 
+#### 5.  Transitionend Event
+use `item.classList.add('className')` to add class when key pressed. In our case, `key.classList.add('playing')`.
+  
+use `transitionend` event to remove `play` class. since we want to just remove `transform` property, so add a condition to skip others.
 ```
-keys.forEach(key => key.addEventListener());
+function removeTransition(e) {
+   if (e.propertyName !== 'transform') return; // skip it if it's not a transform
+   e.target.classList.remove('playing');
+}
+```
+
+

@@ -5,7 +5,7 @@
 ![starting](../02%20-%20JS%20and%20CSS%20Clock/images/img2.PNG)
 ## Guide
 **Steps:**
-### 1. Initialize pointer positions and rotation along the x-axis in CSS
+### Initialize pointer positions and rotation along the x-axis in CSS
 
 ```
 transform-origin: 100%;
@@ -14,20 +14,22 @@ transition: all 0.05s;
 transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 ```
 
-### **CSS**:
+### CSS
     1.  Set the `transform-origin` CSS property of the `.hand` class to `100%`; 
                
     1. The hands are all laying flat; we need them to be vertical. Rotate all of the
         hands by 90 degrees so that they are upright by giving the `.hand` class a
         `transform` rule with the value `rotate(90deg)`.
+        
     ![demo](../02%20-%20JS%20and%20CSS%20Clock/images/transform.gif)
+    
     1. Set the `transition` CSS property of `.hand` to `all 0.05s`; this tells the browser
         to gradually apply any changes to the element's styling over a 0.05 second period.
 
     1. Set the `transition-timing-function` CSS property of `.hand` to whatever function
         you prefer, or define your own using the `cubic-bezier()` property value.
 
-### **JavaScript**:
+### JavaScript
 
 ```
 const secondHand = document.querySelector('.second-hand');

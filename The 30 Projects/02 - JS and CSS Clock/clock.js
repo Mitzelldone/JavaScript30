@@ -17,6 +17,15 @@ function setDate() {
     const hour = now.getHours();
     const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+    
+    // remove glitch.
+    if (secondsDegrees === 90) {
+      secondHand.style.transition = 'all 0s';
+    }else secondHand.style.transition = 'all 0.05s';
+
+    if (minsDegrees === 90) { minHand.style.transition = 'all 0s';
+    }else minHand.style.transition = 'all 0.1s';
+
   }
 
   setInterval(setDate, 1000);

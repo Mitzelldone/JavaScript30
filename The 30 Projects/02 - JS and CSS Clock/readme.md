@@ -13,7 +13,8 @@ transform: rotate(90deg);
 transition: all 0.05s;
 transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 ```
-- **CSS**:
+
+### **CSS**:
     1.  Set the `transform-origin` CSS property of the `.hand` class to `100%`; 
                
     1. The hands are all laying flat; we need them to be vertical. Rotate all of the
@@ -26,30 +27,19 @@ transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     1. Set the `transition-timing-function` CSS property of `.hand` to whatever function
         you prefer, or define your own using the `cubic-bezier()` property value.
 
-- **JavaScript**:
+### **JavaScript**:
 
-Create a function that will automatically run every second. Example below: "hi" for every second.
-     
-```
-function setDate() {
-    console.log("hi");
-}
-setInterval(setDate, 1000); 
-setDate(); 
-```
-     
 ```
 const secondHand = document.querySelector('.second-hand');
-
 function setDate() {
     const now = new Date();
-
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360) + 90;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`; 
 }
 setInterval(setDate, 1000);
 ```
+
 - Declare & define variables for each clock hand and reference the corresponding HTML element.
   example: `const secondHand = document.querySelector('.second-hand')` 
 - `setInterval` function runs a function passed to it every interval specified which to implement the second pointer's rotating effect.
@@ -58,8 +48,8 @@ setInterval(setDate, 1000);
 
 - `const secondDegrees = ((seconds / 60) * 360) + 90;` -calculating angles of pointers for second-hand.
     (the initial state of pointers are 90 degrees)
-
-### Glitch fix
+-  `  secondHand.style.transform = `rotate(${secondsDegrees}deg)``Apply rotation to the clock hands corresponding with current time value
+#### Glitch fix
 
 Due to there is a glitch that occurs at every 0th second and our transition is set at 0.05s. When hand transition from final state to initial state, because the number of degrees reduce, the hand makes a (reverse) anti-clockwise motion to reach the 0 degree mark, so we'll see it occurs.
 

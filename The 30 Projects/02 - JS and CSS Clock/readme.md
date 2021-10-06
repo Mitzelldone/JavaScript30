@@ -15,19 +15,18 @@ transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 ```
 
 ### CSS
-    1.  Set the `transform-origin` CSS property of the `.hand` class to `100%`; 
+- Set the `transform-origin` CSS property of the `.hand` class to `100%`; 
                
-    1. The hands are all laying flat; we need them to be vertical. Rotate all of the
+- The hands are all laying flat; we need them to be vertical. Rotate all of the
         hands by 90 degrees so that they are upright by giving the `.hand` class a
         `transform` rule with the value `rotate(90deg)`.
-        
-    ![demo](../02%20-%20JS%20and%20CSS%20Clock/images/transform.gif)
+        ![demo](../02%20-%20JS%20and%20CSS%20Clock/images/transform.gif)
     
-    1. Set the `transition` CSS property of `.hand` to `all 0.05s`; this tells the browser
-        to gradually apply any changes to the element's styling over a 0.05 second period.
+- Set the `transition` CSS property of `.hand` to `all 0.05s`; this tells the browser to gradually apply any changes to the element's styling over a 0.05 second period.
 
-    1. Set the `transition-timing-function` CSS property of `.hand` to whatever function
+- Set the `transition-timing-function` CSS property of `.hand` to whatever function
         you prefer, or define your own using the `cubic-bezier()` property value.
+
 
 ### JavaScript
 
@@ -50,9 +49,9 @@ setInterval(setDate, 1000);
 
 - `const secondDegrees = ((seconds / 60) * 360) + 90;` -calculating angles of pointers for second-hand.
     (the initial state of pointers are 90 degrees)
--  `  secondHand.style.transform = `rotate(${secondsDegrees}deg)``Apply rotation to the clock hands corresponding with current time value
-#### Glitch fix
+-  ` secondHand.style.transform = `rotate(${secondsDegrees}deg)``Apply rotation to the clock hands corresponding with current time value.
 
+#### Glitch fix
 Due to there is a glitch that occurs at every 0th second and our transition is set at 0.05s. When hand transition from final state to initial state, because the number of degrees reduce, the hand makes a (reverse) anti-clockwise motion to reach the 0 degree mark, so we'll see it occurs.
 
 To bypass it, we remove the `transition` property at the specified degrees (where glitch occurs) via JavaScript.

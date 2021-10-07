@@ -1,0 +1,34 @@
+/* Define variables at the root level so their scope is the entire document */
+:root {
+	--base: #e8030b;
+	--spacing: 10px;
+	--blur: 10px;
+}
+/* Set image property values using previously defined variables */
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
+/* 'JS' text color that will match the image background color */
+.hl {
+	color: var(--base);
+}
+
+/* misc styles, nothing to do with css variables */
+body {
+	text-align: center;
+	background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	color: white;
+	font-family: "helvetica neue", sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100px;
+}

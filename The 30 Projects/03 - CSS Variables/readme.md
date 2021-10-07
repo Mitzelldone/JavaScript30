@@ -46,13 +46,13 @@
      ```
       
 - Iterate through the _HTML Node Elements_ that the variable is referencing and
-    attach _event listeners_ to each one that will call on an _event handler_ whenever
+    attach _event listeners_ to each one that will call on _handleUpdate_ whenever
     
     the input value has been changed (the `change` event).
      ```
      inputs.forEach(input => input.addEventListener('change',handleUpate));
      ```
-- Repeat step 2, listening for mouse movements on the inputs instead of value
+- Repeat for mouse movements on the inputs instead of value
     changes (the `mousemove` event).
     
      ```

@@ -3,7 +3,7 @@
 ## Task
 **Given a web page with an analog clock created with CSS, write the JavaScript necessary to make the clock functional. Make alterations to the CSS as necessary.**
 ![starting](../02%20-%20JS%20and%20CSS%20Clock/images/img2.PNG)
-## Guide
+## Note
 **Steps:**
 ### Initialize pointer positions and rotation along the x-axis in CSS
 

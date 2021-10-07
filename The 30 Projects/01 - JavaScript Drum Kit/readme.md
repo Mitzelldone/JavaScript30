@@ -8,7 +8,7 @@
 - Transitionend event
 - Dealing with animation
 - Listen for animation end event
-## Guide
+## Note
 We are provided with the HTML, CSS, and sound clips necessary to create this
   page/application. Let's go over the provided files and look at the pieces
   that we can utilize to fulfill the requirements:

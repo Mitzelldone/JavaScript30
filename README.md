@@ -16,6 +16,6 @@ I created this respitory to keep track of my progress and documentation in the J
 
 1. [JavaScript Drum Kit](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/01%20-%20JavaScript%20Drum%20Kit)
 2. [JS and CSS Clock](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/02%20-%20JS%20and%20CSS%20Clock)
-
+3. [CSS Variables](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/03%20-%20CSS%20Variables)
 ## Credits
 I refer [Nitish Dayal](https://github.com/nitishdayal/JavaScript30) and [Amelie](https://github.com/amelieyeh/JS30) for documentation.

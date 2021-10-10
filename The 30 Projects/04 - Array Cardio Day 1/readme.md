@@ -1,5 +1,5 @@
 # Array Cardio Day 1 💪
-DEMO: [HERE](https://github.com/Mitzelldone/JavaScript30/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/index.html)
+DEMO: [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/index.html)
 
 ![Demo](../04%20-%20Array%20Cardio%20Day%201/demo.PNG)
 

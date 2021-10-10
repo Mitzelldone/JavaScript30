@@ -1,7 +1,7 @@
 # Array Cardio Day 1 💪
 DEMO: [HERE](https://github.com/Mitzelldone/JavaScript30/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/index.html)
 
-![Demo](./04%20-%20Array%20Cardio%20Day%201/demo.PNG)
+![Demo](../04%20-%20Array%20Cardio%20Day%201/demo.PNG)
 
 Not really much of a guide necessary for this one. The challenge is pretty
 well documented as far as what's expected from the developer; use

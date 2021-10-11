@@ -1,4 +1,4 @@
-# Flex Panels Image Gallery
+# Flex Panels Image Gallery 🖼️
 **DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/05%20-%20Flex%20Panel%20Gallery/index.html)
 
 ![demo](../05%20-%20Flex%20Panel%20Gallery/demo.gif)

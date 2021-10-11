@@ -40,7 +40,7 @@ Horizontally and vertically center the content of the `panel` class, and modify 
   definitions for the first and last child elements of the `panel` class to push them
   off the page and to bring them back in when their parent `panel` is selected, and
   update the CSS for the `panel open` class so that the selected `div` will be 5x
-  larger than the other `div` elements. ~~Holy CSS, Batman!~~
+  larger than the other `div` elements.
 
 Finally, we'll write some JavaScript code to attach _event listeners_ to each `panel`
   element that will fire when an panel is clicked on and call their respective _event

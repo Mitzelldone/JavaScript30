@@ -138,11 +138,15 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
   
   1. Declare & define a variable as a reference to _all elements with a class `panels`_.
   2. Iterate through the _HTML Node elements_ that the variable is referencing and attach
-    an _event listener_ for the `click` event to each element, providing the name of a 
-    yet-to-be-defined function as the _event handler_.
+    an _event listener_ for the `click` event to each element.
   3. Repeat step 2, this time attaching an _event listener_ for the `transitionend` event
     and providing a different function name for the _event handler_.
   4. Define the function for Step 2 to **toggle** the class `open` on the _function context_.
   5. Define the function for Step 3 to **toggle** the class `open-active` on the _function
     context_ **IF** the event which triggered this function has a property name that
     includes the word 'flex'.
+    Due to there are different words between browsers, so we use .includes() to find the key word 'flex'.
+      - Safari transitionend event.propertyName === flex
+      - Chrome + FF transitionend event.propertyName === flex-grow
+
+

@@ -10,15 +10,6 @@ We are given a web page with an `input` HTML element in which the user can inser
   was matched. 
 ## Guide
 
-Declare a variable which will contain an array and **fetch** the data from the provided endpoint,
-  _pushing_ the return values into the array. We'll need to attach an _event listener_ to the
-  `input` HTML element that will listen for the 'keyup' event, and call a yet-to-be-defined
-  _event handler_ function that will be responsible for formatting the data and displaying it
-  on the page. Within the body of the _event handler_ function we will call upon another
-  function (which we will define) that will be responsible for matching the inputted text 
-  and the values we received from the endpoint. How do we match the data from the endpoint with
-  the user's inputs? 
-
 **Steps:**
 
 1. Declare three variables, one which will contain the data returned from the endpoint in an
@@ -28,7 +19,15 @@ Declare a variable which will contain an array and **fetch** the data from the p
 2. Modern browser APIs provide us with an experimental `fetch` method that _fetches resources 
   (including across network)_ and returns a **Promise** containing the response in a **Response**
   object. We'll use this method to get our data from the provided endpoint, convert the response
-  to JSON, and then push the items into our array.
+  to JSON, and then push the items into our array. `...data` is a ES6 Spread syntax.
+      ```JavaScript
+      const cities = [];
+
+      fetch(endpoint)
+          .then(blob => blob.json())
+          .then(data => cities.push(...data))
+      ```
+        
 
 3. Attach an _event listener_ to the `input` HTML element which will listen for the 'keyup' event
   and call upon a function as the _event handler_ that will be responsible for displaying

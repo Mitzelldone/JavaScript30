@@ -17,5 +17,6 @@ I created this respitory to keep track of my progress and documentation in the J
 3. [CSS Variables](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/03%20-%20CSS%20Variables)
 4. [Array Cardio Day 1 💪](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201)
 5. [Flex Panels Image Gallery 🖼️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/05%20-%20Flex%20Panel%20Gallery)
+6. [Type Ahead AJAX](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/06%20-%20Type%20Ahead)
 ## Credits
-Documentation source : [Nitish Dayal](https://github.com/nitishdayal/JavaScript30) and [Amelie](https://github.com/amelieyeh/JS30). Big thanks!
+Documentation source : [Nitish Dayal](https://github.com/nitishdayal/JavaScript30) and [Amelie](https://github.com/amelieyeh/JS30). 

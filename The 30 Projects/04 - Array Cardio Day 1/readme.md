@@ -3,11 +3,6 @@ DEMO: [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/04%2
 
 ![Demo](../04%20-%20Array%20Cardio%20Day%201/demo.PNG)
 
-Not really much of a guide necessary for this one. The challenge is pretty
-well documented as far as what's expected from the developer; use
-built-in array methods and perform the necessary operations to provide
-the expected values. Easy peasy.
-
 If you're unfamiliar with JavaScript array methods, Mozilla docs are your
 friend.
 

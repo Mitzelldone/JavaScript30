@@ -6,10 +6,10 @@
     - Dynamically update the string value logged out using %s
     - Interpolation using ES6 template strings
 4. Styled
-5. warning!
-6. console.warn
-7. console.error
-8. console.info
+5. console.warn
+6. console.error
+7. console.info
+8. console.assert
 9. console.clear
 10. console.dir
 11. console.group

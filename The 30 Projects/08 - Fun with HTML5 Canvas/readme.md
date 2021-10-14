@@ -32,7 +32,6 @@ in our tutorial we use these:
   - `ctx.lineJoin`: determines how two connecting segments (of lines, arcs or curves) with non-zero lengths in a shape are joined together), `bevel` | `round` | `miter`.
   - `ctx.lineWidth`: sets the thickness of lines in space units.
   - `ctx.strokeStyle`: specifies the color or style to use for the lines around shapes. The default is `#000` (black).
-  - `ctx.fillStyle`: specifies the color or style to use inside shapes. The default is `#000` (black).
 
 - Methods
   - `ctx.beginPath()`: starts a new path by emptying the list of sub-paths. Call this method when you want to create a new path.
@@ -106,24 +105,9 @@ ctx.stroke();
 
 [lastX, lastY] = [e.offsetX, e.offsetY];
 ```
-**[NOTICE]**: `[lastX, lastY] = [e.offsetX, e.offsetY]`
-  - it must be at the bottom of "go to" section in the function, or it will have a slight problem occurs.
-  - this is in the ES6 syntax to define multiple variables in one statement, it's also equals like:
+- [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
 
-    ```
-    lastX = e.offsetX;
-    lastY = e.offsetY;
-    ```
-  - ↑↑↑ this way called [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) (see "Assignment seperate from declaration" section)
-  - example:
-
-    ```
-    var a, b;
-
-    [a, b] = [1, 2];
-    console.log(a); // 1
-    console.log(b); // 2
-    ```
+  `[lastX, lastY] = [e.offsetX, e.offsetY]`
 
 - controlling line width of stroke
 
@@ -139,19 +123,7 @@ if(direction) {
 }
 ```
 
-
-- drawing on mobile?
-
-try
-
-```
-// dealing with touch screen
-if (e.type != "mousemove") {
-  x = e.changedTouches[0].clientX;
-  y = e.changedTouches[0].clientY;
-}
-```
-
 ## Summary
+Element: mousemove event ([MDN Guide](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event))
 
 

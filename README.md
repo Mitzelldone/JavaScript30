@@ -19,5 +19,6 @@ I created this respitory to keep track of my progress and documentation in the J
 5. [Flex Panels Image Gallery 🖼️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/05%20-%20Flex%20Panel%20Gallery)
 6. [Type Ahead AJAX](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/06%20-%20Type%20Ahead)
 7. [Array Cardio Day 2 💪](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/07%20-%20Array%20Cardio%20Day%202)
+8. [HTML5 Canvas 🌈](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/08%20-%20Fun%20with%20HTML5%20Canvas)
 ## Credits
 Documentation source : [Nitish Dayal](https://github.com/nitishdayal/JavaScript30) and [Amelie](https://github.com/amelieyeh/JS30). 

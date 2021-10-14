@@ -1,4 +1,4 @@
-# 14 Must Know Dev Tools Tricks
+# 14 Console tricks 
 
 1. Making a break point to see what's going on to the element.
 2. Regular

@@ -1,4 +1,6 @@
 # 14 Console tricks 
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/09%20-%20Dev%20Tools%20Domination/index.html)
+
 ![demo](../09%20-%20Dev%20Tools%20Domination/Capture.PNG)
 1. Making a break point to see what's going on to the element.
 2. Regular

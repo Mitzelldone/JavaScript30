@@ -101,7 +101,7 @@ function skip() {
 skipButtons.forEach(button => button.addEventListener('click', skip));
 ```
 
-We can change the video time by assigning the new time to video.currentTime. The skip time is got from the data-skip attribute. So you can go -10 seconds back in time or skip 25 seconds ahead.
+We can change the video time by assigning the new time to `video.currentTime`. The skip time is got from the `data-skip` attribute. So you can go -10 seconds back in time or skip 25 seconds ahead.
 
 ## Handle the volume and playback rate change
 

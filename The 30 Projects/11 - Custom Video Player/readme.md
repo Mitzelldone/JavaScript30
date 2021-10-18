@@ -36,10 +36,32 @@ Main steps involved in creating the player :
 2. Write a function to play/pause
 3. Update the play/pause button based on state of video
 4. Add the skip forward and backward functionality
-5. Handle the volume change
-6. Handle the playback speed range
-7. Display the video progress
-8. Seek a position in the video by clicking/dragging on the progress bar
-9. Toggle fullscreen
+5. Handle the volume change and playback speed range
+6. Display the video progress
+7. Seek a position in the video by clicking/dragging on the progress bar
+8. Toggle fullscreen
 
 ## Get all the elements
+```JavaScript
+const player = document.querySelector('.player');
+const video = player.querySelector('.viewer');
+const progress = player.querySelector('.progress');
+const progressBar = player.querySelector('.progress__filled');
+const toggle = player.querySelector('.toggle');
+const skipButtons = player.querySelectorAll('[data-skip]');
+const ranges = player.querySelectorAll('.player__slider');
+const fullscreen = player.querySelector('.player__fullscreen')
+```
+- You can read more about the [video element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) or preferrably the [Media element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement) it inherets from. 
+- We'll be using the JS properties quite a bit. 
+- If you also fancy a tutorial about the video element: [media](https://web.dev/media/) has a brilliant one!
+
+## Write a function to play/pause
+
+## Update the play/pause button
+## Add the skip forward and backward functionality
+## Handle the volume and playback rate change
+## Display the video progress
+## Seek a position in the video
+## Toggle fullscreen
+

@@ -23,5 +23,6 @@ I created this respitory to keep track of my progress and documentation in the J
 9. [Dev Tools Domination](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/09%20-%20Dev%20Tools%20Domination)
 10. [Hold Shift and Check JS Checkboxes](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/10%20-%20Hold%20Shift%20and%20Check%20%20JS%20Checkboxes)
 11. [HTML5 Custome Video Player 🐰](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/11%20-%20Custom%20Video%20Player)
+12. [Key Sequence Detection 🦄](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/12%20-%20Key%20Sequence%20Detection)
 ## Credits
 Documentation source : [Nitish Dayal](https://github.com/nitishdayal/JavaScript30), [Amelie](https://github.com/amelieyeh/JS30), and [discoverdev.io](https://www.discoverdev.io/blog/series/js30/). 

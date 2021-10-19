@@ -22,7 +22,7 @@ There are several websites which hold this hidden code, some of them are:
 - There's a script tag in the document header that loads a JavaScript file from [Cornify.js](https://www.cornify.com/) library which will inject an image of a unicorn🦄 into the DOM and a p element on the bottom of the page if we call `cornify_add()`.
 - The idea is to trigger an action when a particular key sequence is pressed.
 
-Steps :
+**Steps:**
 
 1. Store the code, get the length of the code (n).
 2. Have an array that records the last n keys pressed.

@@ -10,11 +10,10 @@ Similarly, we can embed specific code(combination of keys) in our website which 
 *Note: Press keys Up, Up, Down, Down, Left, Right, Left, Right, B, A*
 
 There are several websites which hold this hidden code, some of them are:
-1. https://kuppiya.com/
-2. http://nikdaum.com/
-3. https://www.buzzfeed.com/
-4. http://terraria.org/
-5. http://elliottkember.com/
+1. https://www.analyticsmania.com/google-tag-manager-recipes/rick-roll/
+2. https://kuppiya.com/
+3. http://nikdaum.com/
+4. https://www.buzzfeed.com/
 
 ## Guide
 **Task:** 

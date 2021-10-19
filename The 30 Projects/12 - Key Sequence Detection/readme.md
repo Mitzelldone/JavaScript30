@@ -20,6 +20,9 @@ There are several websites which hold this hidden code, some of them are:
 **Task:** 
 - There is pretty much no starter file, this project is a simple JS function. 
 - There's a script tag in the document header that loads a JavaScript file from [Cornify.js](https://www.cornify.com/) library which will inject an image of a unicorn🦄 into the DOM and a p element on the bottom of the page if we call `cornify_add()`.
+  ```HTML
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+  ```
 - The idea is to trigger an action when a particular key sequence is pressed.
 
 **Steps:**

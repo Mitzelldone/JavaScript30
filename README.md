@@ -5,7 +5,8 @@
 > - **Website:** [JavaScript30](https://javascript30.com/)
 
 ### Who is this For?
-Beginner to Intermediate developers and designers who want to become comfortable with both JavaScript fundamentals and working in the DOM without a library. Also, you should already know some JavaScript to start - This isn't a JavaScript 101 course.
+- Beginner to Intermediate developers and designers who want to become comfortable with both JavaScript fundamentals and working in the DOM without a library. 
+- You should already know some JavaScript to start - This isn't a JavaScript 101 course.
 
 ## About
 I created this respitory to keep track of my progress and documentation in the JavaScript 30 Day Challenge and commiting & logging what I have learnt on daily basis.

@@ -17,7 +17,37 @@ There are several websites which hold this hidden code, some of them are:
 5. http://elliottkember.com/
 
 ## Guide
-There is pretty much no starter file, this project is a simple JS function. The idea is to trigger an action when a particular key sequence is pressed.
+**Task:** 
+- There is pretty much no starter file, this project is a simple JS function. 
+- There's a script tag in the document header that loads a JavaScript file from [Cornify.js](https://www.cornify.com/) library which will inject an image of a unicorn🦄 into the DOM and a p element on the bottom of the page if we call `cornify_add()`.
+- The idea is to trigger an action when a particular key sequence is pressed.
 
+Steps :
 
+1. Store the code, get the length of the code (n).
+2. Have an array that records the last n keys pressed.
+3. When the characters in the array matches the secret code, trigger the action.
+
+```JavaSCript
+//this is the array
+const pressed = [];
+
+//the secret code
+const secretCode = 'yolo';
+
+window.addEventListener('keyup', (e) => {
+  // e.key is the key is the key pressed, add it to the array
+  pressed.push(e.key);
+
+  // cut the array to the size of secretCode.length from the end of the array
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+
+  //convert array into string, see if it is the secretCode
+  //.join() to turn the array into a string
+  if (pressed.join('').includes(secretCode)) {
+    //take action
+    cornify_add();
+  }
+});
+```
 

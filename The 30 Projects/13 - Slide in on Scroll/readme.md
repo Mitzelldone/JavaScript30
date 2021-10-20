@@ -63,21 +63,26 @@ The property ensures that the image is completely transparent and has a 0.5s tra
 
 ```JavaScript
 function checkSlide() {
-  sliderImages.forEach(sliderImage => {
-    // half way through the image
-    const isHalfShown =  (window.scrollY + window.innerHeight) > 
-                         (sliderImage.offsetTop +sliderImage.height / 2);
+    sliderImages.forEach(sliderImage => {
+        //half way through the image
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        // bottom of the image
+        const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
 
-    // bottom of the image
-    const imageBottom = sliderImage.offsetTop + sliderImage.height;
-    const isNotScrolledPast = window.scrollY < imageBottom;
-
-    // if more that half is over the scroll view *and* it hasn't scrolled out of view
-    if (isHalfShown && isNotScrolledPast) {
-        sliderImage.classList.add('active');
-    } else {
-        sliderImage.classList.remove('active');
-    }
-  });
+        // if more that half is over the scroll view *and* it hasn't scrolled out of view
+        if (isHalfShown && isNotScrolledPast) {
+          sliderImage.classList.add('active');
+        } else {
+          sliderImage.classList.remove('active');
+        }
+    });
 }
 ```
+
+Now to see if half is shown, we get the total length that has been scrolled into view (from top) = window.scrollY + window.innerHeight and then see if thats greater than the top of the image + half it's height, sliderImage.offsetTop +sliderImage.height / 2. **
+
+Also we have to check that the image hasn't scrolled pass the top so we see if the top position is lesser that the image's bottom position, `window.scrollY < imageBottom`.
+
+If both these conditions are met, then the CSS class active is added to the image, which animates it into view. If either of them aren't met, the class is removed!

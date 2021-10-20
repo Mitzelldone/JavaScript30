@@ -1,7 +1,7 @@
 # Slide in on scroll
 🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/13%20-%20Slide%20in%20on%20Scroll/index.html)
 
-![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/13.demo.PNG)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/13.demo.png)
 #
 The general algorithm is as follows
 

@@ -1,5 +1,6 @@
 # JavaScripts Reference vs Copying
-
+- We're learning about JavaScript variable referencing vs. copying. 
+- If you want a full-blown explanation, take a look at [chapter 11, section 2 of 'JavaScript: The Definitive Guide'](https://docstore.mik.ua/orelly/webprog/jscript/ch11_02.htm).
 #
 
 Lets start with **strings** and **numbers**

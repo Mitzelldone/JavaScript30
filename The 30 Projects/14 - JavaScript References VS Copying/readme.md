@@ -1,5 +1,6 @@
 # JavaScripts Reference vs Copying
-
+- We're learning about JavaScript variable referencing vs. copying. 
+- If you want a full-blown explanation, take a look at [chapter 11, section 2 of 'JavaScript: The Definitive Guide'](https://docstore.mik.ua/orelly/webprog/jscript/ch11_02.htm).
 #
 
 Lets start with **strings** and **numbers**
@@ -111,7 +112,12 @@ const wes = {
     }
 };
 
+//1 level deep
 const dev = Object.assign({}, wes);
+dev.social = "wesley"
+console.log(wes)
+// {name:"Wesley", age:100, social:{twitter: "@wesobs", facebook: "wesbos.developer"}}
+
 dev.social.twitter = "@yolo"
 console.log(wes)
 // Object has changed, twitter handle is now @yolo
@@ -121,7 +127,7 @@ const dev2 = JSON.parse(JSON.stringify(wes));
 dev2.social.twitter = "@yolo2"
 console.log(wes)
 // Output hasn't changed, twitter handle is not @yolo2
-// {name:"Wes", age:100, social:{twitter: "@wesbos", facebook: "wesbos.developer"}}
+// {name:"Wes", age:100, social:{twitter: "@yolo", facebook: "wesbos.developer"}}
 ```
 
 We can have a deep copy using JSON.parse and JSON.stringify. In the second case, changing a nested object in _dev2_ did not affect the original object.

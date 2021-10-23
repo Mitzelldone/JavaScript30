@@ -1,6 +1,7 @@
 const addItems = document.querySelector('.add-items');
 const itemsList = document.querySelector('.plates');
 const items = JSON.parse(localStorage.getItem('items')) || [];
+const massToggleButton = document.querySelectorAll('.mass-toggle')
 
 function addItem(e) {
     e.preventDefault(); 
@@ -35,7 +36,15 @@ function toggleDone(e) {
     localStorage.setItem('items', JSON.stringify(items));
     populateList(items, itemsList);
 }
+ //check/uncheck all
+function massToggle (e) {
+    let status = e.target.dataset.toggle == "check";
+    items.forEach((item) => item.done = status);
+    populateList(items, itemsList);
+    localStorage.setItem('items', JSON.stringify(items))
+}
 
 addItems.addEventListener('submit', addItem);
 itemsList.addEventListener('click', toggleDone);
 populateList(items, itemsList);
+massToggleButton.forEach((btns) => btns.addEventListener("click", massToggle))

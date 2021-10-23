@@ -19,6 +19,10 @@ We'll be building a to-do list of sorts, with local storage to persist the infor
     <input type="text" name="item" placeholder="Item Name" required>
     <input type="submit" value="+ Add Item">
   </form>
+  <div class="toggles">
+    <button data-toggle="check" class="mass-toggle" >Check All </button>
+    <button data-toggle="reset" class="mass-toggle" >Reset all </button>
+   </div>
 </div>
 ```
 
@@ -65,6 +69,7 @@ We have to handles the form where the user inputs new items and then display the
 - Display the items in the `items` array.
 - Toggle an item.
 - Save the list to local storage.
+- Check and reset.
 
 ## Adding new items
 
@@ -187,4 +192,18 @@ Also we need to get the items from local storage when we load the page. We'll mo
 
 ```JavaScript
 const items = JSON.parse(localStorage.getItem('items')) || [];
+```
+## Check and Reset
+
+```JavaScript
+const massToggleButton = document.querySelectorAll('.mass-toggle')  
+
+//check/uncheck all
+function massToggle (e) {
+    let status = e.target.dataset.toggle == "check";
+    items.forEach((item) => item.done = status);
+    populateList(items, itemsList);
+    localStorage.setItem('items', JSON.stringify(items))
+}
+massToggleButton.forEach((btns) => btns.addEventListener("click", massToggle))
 ```

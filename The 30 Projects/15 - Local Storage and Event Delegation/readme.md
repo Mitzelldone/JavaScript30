@@ -1,5 +1,7 @@
 # LocalStorage and Event Delegation
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/15%20-%20Local%20Storage%20and%20Event%20Delegation/index.html)
 
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/13.demo.png)
 We'll be building a to-do list of sorts, with local storage to persist the information across a refresh or reload.
 
 ## HTML and CSS Explaination

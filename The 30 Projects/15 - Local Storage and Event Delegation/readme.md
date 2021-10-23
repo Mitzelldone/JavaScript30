@@ -84,7 +84,7 @@ function addItem(e) {
       done: false
   };
 
-  items.push(item);
+  items.push(item); //take item and put it into the items array
 
   //  display the list - populateList();
   //  store to local storage - localStorage.set()
@@ -95,7 +95,7 @@ function addItem(e) {
 addItems.addEventListener('submit', addItem);
 ```
 
-- Attach an event handler to the `form` element that will listen for the `'submit'` event and call upon an event handler.
+- Attach an _event handler_ to the `form` element that will listen for the `'submit'` event and call upon an event handler.
 - Define the _event handler_ as a function which accepts an `event` as a parameter and will prevent the default behavior of that event.
 - We call `e.preventDefault()` to prevent the default behavior.
 - In `addItem() function, `this`refers to ther`form.add-items DOM object.
@@ -130,6 +130,8 @@ function addItem(e){
 - `populateList()` uses template strings and `[].map` to create `<li>` elements from each element in the array, which is later concatenated into one string which `platesList.innerHTML` is set to.
 - `addItem` uses `populatedList` to render all the current items.
 - here the `.join('')` takes the array (which is `places.map()` made) and turn into a string and then pass it to `.innerHTML`.
+- don't forget to set the default `plates` as an empty array(or object), otherwise it will break up the javascript sometimes (in this case the `plates` is an array).
+> everytime we create an item, it calls `populateList()` and rerendering the entire list again instead of just update one single line, in this case is OK on performance, but practically just update one single line by using React or other frameworks is more efficient and helpful
 
 ## Toggle an item
 
@@ -192,7 +194,7 @@ function addItem(e) {
 Also we need to get the items from local storage when we load the page. We'll modify items array to take read from the local storage first, if it doesn't have an 'items' key, we'll assign it to an empty array as we had earlier.
 
 ```JavaScript
-const items = JSON.parse(localStorage.getItem('items')) || [];
+const items = JSON.parse(localStorage.getItem('items')) || []; // const items is to check if there is something in localStorage and then we fall back to an empty array.
 ```
 ## Check and Reset
 

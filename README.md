@@ -27,5 +27,6 @@ I created this respitory to keep track of my progress and documentation in the J
 12. [Key Sequence Detection 🦄](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/12%20-%20Key%20Sequence%20Detection)
 13. [Slide in on scroll](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/13%20-%20Slide%20in%20on%20Scroll)
 14. [JavaScripts Reference vs Copying](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/14%20-%20JavaScript%20References%20VS%20Copying/readme.md)
+15. [LocalStorage and Event Delegation](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/15%20-%20Local%20Storage%20and%20Event%20Delegation)
 ## Credits
 Documentation source : [Nitish Dayal](https://github.com/nitishdayal/JavaScript30), [Amelie](https://github.com/amelieyeh/JS30), and [discoverdev.io](https://www.discoverdev.io/blog/series/js30/). 

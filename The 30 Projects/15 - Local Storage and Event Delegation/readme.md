@@ -127,8 +127,9 @@ function addItem(e){
 ```
 
 - `populateList()` function does the work of taking in an array and displaying the list.
-- `populateList()` uses template strings and `[].map` to create `<li>` elements from each element in the array, which is late concatenated into one string which platesList.innerHTML is set to.
-- `addItem uses `populatedList` to render all the current items.
+- `populateList()` uses template strings and `[].map` to create `<li>` elements from each element in the array, which is later concatenated into one string which `platesList.innerHTML` is set to.
+- `addItem` uses `populatedList` to render all the current items.
+- here the `.join('')` takes the array (which is `places.map()` made) and turn into a string and then pass it to `.innerHTML`.
 
 ## Toggle an item
 
@@ -139,7 +140,7 @@ function toggleDone(e) {
     if (!e.target.matches('input')) return; // skip this unless it's an input
     const el = e.target;
     const index = el.dataset.index;
-    items[index].done = !items[index].done;
+    items[index].done = !items[index].done; //flip-floping between true and false
     populateList(items, itemsList);
   }
 
@@ -176,14 +177,14 @@ Since we want to keep the local storage in sync with the UI, we'll update the lo
 ```JavaScript
 function toggleDone(e) {
   //...
-  localStorage.setItem('items', JSON.stringify(items));
-  populateList(items, itemsList);
+  localStorage.setItem('items', JSON.stringify(items)); //everytime update will mirror to the localStorage
+  populateList(items, itemsList);  //update the actual visibility part on html
 }
 
 function addItem(e) {
   //...
   localStorage.setItem('items', JSON.stringify(items));
-  populateList(items, itemsList);
+  populateList(items, itemsList); 
   //...
 }
 ```
@@ -202,8 +203,9 @@ const massToggleButton = document.querySelectorAll('.mass-toggle')
 function massToggle (e) {
     let status = e.target.dataset.toggle == "check";
     items.forEach((item) => item.done = status);
-    populateList(items, itemsList);
-    localStorage.setItem('items', JSON.stringify(items))
+    populateList(items, itemsList); update the actual visibility part on html
+    localStorage.setItem('items', JSON.stringify(items)); //everytime update will mirror to the localStorage
+    
 }
 massToggleButton.forEach((btns) => btns.addEventListener("click", massToggle))
 ```

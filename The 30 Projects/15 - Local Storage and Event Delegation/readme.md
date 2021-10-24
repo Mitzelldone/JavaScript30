@@ -1,7 +1,8 @@
 # LocalStorage and Event Delegation
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/15%20-%20Local%20Storage%20and%20Event%20Delegation/index.html)
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/15%20-%20Local%20Storage%20and%20Event%20Delegation/index.html)
 
-![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/13.demo.png)
+
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/15.demo.gif)
 We'll be building a to-do list of sorts, with local storage to persist the information across a refresh or reload.
 
 ## HTML and CSS Explaination
@@ -19,6 +20,10 @@ We'll be building a to-do list of sorts, with local storage to persist the infor
     <input type="text" name="item" placeholder="Item Name" required>
     <input type="submit" value="+ Add Item">
   </form>
+  <div class="toggles">
+    <button data-toggle="check" class="mass-toggle" >Check All </button>
+    <button data-toggle="reset" class="mass-toggle" >Reset all </button>
+   </div>
 </div>
 ```
 
@@ -65,6 +70,7 @@ We have to handles the form where the user inputs new items and then display the
 - Display the items in the `items` array.
 - Toggle an item.
 - Save the list to local storage.
+- Check and reset.
 
 ## Adding new items
 
@@ -79,7 +85,7 @@ function addItem(e) {
       done: false
   };
 
-  items.push(item);
+  items.push(item); //take item and put it into the items array
 
   //  display the list - populateList();
   //  store to local storage - localStorage.set()
@@ -90,7 +96,7 @@ function addItem(e) {
 addItems.addEventListener('submit', addItem);
 ```
 
-- Attach an event handler to the `form` element that will listen for the `'submit'` event and call upon an event handler.
+- Attach an _event handler_ to the `form` element that will listen for the `'submit'` event and call upon an event handler.
 - Define the _event handler_ as a function which accepts an `event` as a parameter and will prevent the default behavior of that event.
 - We call `e.preventDefault()` to prevent the default behavior.
 - In `addItem() function, `this`refers to ther`form.add-items DOM object.
@@ -122,8 +128,11 @@ function addItem(e){
 ```
 
 - `populateList()` function does the work of taking in an array and displaying the list.
-- `populateList()` uses template strings and `[].map` to create `<li>` elements from each element in the array, which is late concatenated into one string which platesList.innerHTML is set to.
-- `addItem uses `populatedList` to render all the current items.
+- `populateList()` uses template strings and `[].map` to create `<li>` elements from each element in the array, which is later concatenated into one string which `platesList.innerHTML` is set to.
+- `addItem` uses `populatedList` to render all the current items.
+- here the `.join('')` takes the array (which is `places.map()` made) and turn into a string and then pass it to `.innerHTML`.
+- don't forget to set the default `plates` as an empty array(or object), otherwise it will break up the javascript sometimes (in this case the `plates` is an array).
+> everytime we create an item, it calls `populateList()` and rerendering the entire list again instead of just update one single line, in this case is OK on performance, but practically just update one single line by using React or other frameworks is more efficient and helpful
 
 ## Toggle an item
 
@@ -134,7 +143,7 @@ function toggleDone(e) {
     if (!e.target.matches('input')) return; // skip this unless it's an input
     const el = e.target;
     const index = el.dataset.index;
-    items[index].done = !items[index].done;
+    items[index].done = !items[index].done; //flip-floping between true and false
     populateList(items, itemsList);
   }
 
@@ -171,14 +180,14 @@ Since we want to keep the local storage in sync with the UI, we'll update the lo
 ```JavaScript
 function toggleDone(e) {
   //...
-  localStorage.setItem('items', JSON.stringify(items));
-  populateList(items, itemsList);
+  localStorage.setItem('items', JSON.stringify(items)); //everytime update will mirror to the localStorage
+  populateList(items, itemsList);  //update the actual visibility part on html
 }
 
 function addItem(e) {
   //...
   localStorage.setItem('items', JSON.stringify(items));
-  populateList(items, itemsList);
+  populateList(items, itemsList); 
   //...
 }
 ```
@@ -186,5 +195,20 @@ function addItem(e) {
 Also we need to get the items from local storage when we load the page. We'll modify items array to take read from the local storage first, if it doesn't have an 'items' key, we'll assign it to an empty array as we had earlier.
 
 ```JavaScript
-const items = JSON.parse(localStorage.getItem('items')) || [];
+const items = JSON.parse(localStorage.getItem('items')) || []; // const items is to check if there is something in localStorage and then we fall back to an empty array.
+```
+## Check and Reset
+
+```JavaScript
+const massToggleButton = document.querySelectorAll('.mass-toggle')  
+
+//check/uncheck all
+function massToggle (e) {
+    let status = e.target.dataset.toggle == "check";
+    items.forEach((item) => item.done = status);
+    populateList(items, itemsList); update the actual visibility part on html
+    localStorage.setItem('items', JSON.stringify(items)); //everytime update will mirror to the localStorage
+    
+}
+massToggleButton.forEach((btns) => btns.addEventListener("click", massToggle))
 ```

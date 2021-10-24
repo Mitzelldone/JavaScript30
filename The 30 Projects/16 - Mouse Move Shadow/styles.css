@@ -1,0 +1,24 @@
+html {
+	color: black;
+	font-family: sans-serif;
+	background: url("https://www.ghibli.jp/gallery/chihiro004.jpg") center
+		no-repeat;
+	background-size: cover;
+}
+
+body {
+	margin: 0;
+}
+
+.hero {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+h1 {
+	text-shadow: 10px 10px 0 rgba(0.5, 0.5, 0.5, 0.4);
+	font-size: 100px;
+}

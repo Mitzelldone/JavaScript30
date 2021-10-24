@@ -1,5 +1,8 @@
-# Mouse move based text shadow animation
+# Mouse move based text shadow animation 🖱️
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/16%20-%20Mouse%20Move%20Shadow/index.html)
 
+
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/16.demo.gif)
 ## HTML and CSS Explaination
 
 ### HTML

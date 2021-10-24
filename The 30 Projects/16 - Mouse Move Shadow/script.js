@@ -1,6 +1,6 @@
 const hero = document.querySelector('.hero');
 const text = hero.querySelector('h1');
-const walk = 500; //500px
+const walk = 300; //300px
 
 function shadow(e) {
     // const width = hero.offsetWidth;
@@ -16,7 +16,7 @@ function shadow(e) {
         y = y + e.target.offsetTop;
     }
 
-    // 500 is high as we go it 250, and low is -250
+    // 300 is high as we go it 150, and low is -150
     const xWalk = Math.round(x / width * walk) - (walk / 2);
     const yWalk = Math.round(y / height * walk) - (walk / 2);
     // console.log(xWalk, yWalk);

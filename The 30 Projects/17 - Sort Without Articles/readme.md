@@ -1,15 +1,18 @@
 # Sort without articles
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/17%20-%20Sort%20Without%20Articles/index.html)
 
+
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/17.demo.png)
 - Today we learn how to sort HTML elements based on their text content.
 - We're given an HTML page with an unordered list, and an array of string values in the `script` tag.
 
-        ```JavaScript
-        const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-        ```
+```JavaScript
+const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+```
 
-        ```HTML
-        <ul id="bands"></ul>
-        ```
+```HTML
+<ul id="bands"></ul>
+```
 
 - Sort the values in the array excluding the prefixes 'The', A', or 'An' and place the values into the unordered list as list items.
 
@@ -68,4 +71,4 @@ document.querySelector('#bands').innerHTML =
 
 - it takes the element and sets to the `innerHTML`, and that's going to return an array with commas (`,`) by default. Therefore, we want to `join('')` it into one big string rather than a bunch of string with a comma in between.
 
-Type `sortedBands.toString()` and `sortedBands.join(''),toString()` in the DOM to see the comparison.
+- Type `sortedBands.toString()` and `sortedBands.join(''),toString()` in the DOM to see the comparison.

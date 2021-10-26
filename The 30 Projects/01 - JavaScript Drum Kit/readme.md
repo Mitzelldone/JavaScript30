@@ -36,7 +36,7 @@ Add an event listener to the entire window object that is listening for a `keydo
   - `window` is the global object in a browser, or the root object of the DOM.
 
 #### 2.  Create a function with the name that you decided on in step 1 which is `playSound`.
-```
+```Javascript
 function playSound(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
@@ -81,7 +81,7 @@ const keys = document.querySelectorAll('.keys');
 use `item.classList.add('className')` to add class when key pressed. In our case, `key.classList.add('playing')`.
   
 use `transitionend` event to remove `play` class. since we want to just remove `transform` property, so add a condition to skip others.
-```
+```Javascript
 function removeTransition(e) {
    if (e.propertyName !== 'transform') return; // skip it if it's not a transform
    e.target.classList.remove('playing');

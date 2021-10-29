@@ -19,9 +19,9 @@ const recognition = new SpeechRecognition();
 recognition.interimResults = true;
 ```
 
--`window.SpeechRecognition` is a Web Speech API. You can learn more about speech recognition @ [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).
+- `window.SpeechRecognition` is a Web Speech API. You can learn more about speech recognition @ [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).
 
--`recognition.interimResults = true` makes sure that results are available while we are speaking
+- `recognition.interimResults = true` makes sure that results are available while we are speaking
 
 **Append a paragraph to the `div.words`, this is where the converted text goes initially.**
 

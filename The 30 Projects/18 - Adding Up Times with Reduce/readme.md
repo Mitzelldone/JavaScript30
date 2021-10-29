@@ -1,4 +1,5 @@
 # Adding Up Times with Reduce
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/18%20-%20Adding%20Up%20Times%20with%20Reduce/index.html)
 
 #
 

@@ -32,6 +32,7 @@ I created this respitory to keep track of my progress and documentation in the J
 17. [Sort without articles](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/17%20-%20Sort%20Without%20Articles)
 18. [Adding Up Times with Reduce](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/18%20-%20Adding%20Up%20Times%20with%20Reduce)
 19. [Webcam fun](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/19%20-%20Webcam%20Fun)
+20. [Native Speech Recognition 🎤](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/20%20-%20Speech%20Detection)
 
 ## Credits
 Documentation source : [Nitish Dayal](https://github.com/nitishdayal/JavaScript30), [Amelie](https://github.com/amelieyeh/JS30), and [discoverdev.io](https://www.discoverdev.io/blog/series/js30/). 

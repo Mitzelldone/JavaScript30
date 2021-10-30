@@ -8,25 +8,59 @@
 - Transitionend event
 - Dealing with animation
 - Listen for animation end event
-## Note
-We are provided with the HTML, CSS, and sound clips necessary to create this
-  page/application. Let's go over the provided files and look at the pieces
-  that we can utilize to fulfill the requirements:
+## HTML
+The main content is in the `div.keys` tag which contains the all the `div.key` elements.
+```HTML
+<div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    ...
+</div>
+
+<audio data-key="65" src="sounds/clap.wav"></audio>
+<audio data-key="83" src="sounds/hihat.wav"></audio>
+<audio data-key="68" src="sounds/kick.wav"></audio>
+  ...
+<audio data-key="76" src="sounds/tink.wav"></audio>
+```
 
 - HTML `data-*` attributes: Introduced in HTML5, `data-*` attributes (where * can
     be anything you want) allow us to store _custom data_ on any HTML element. Each
     `div.key` (`<div class="key" data-key="...">`) and `audio` element in the 
     provided HTML file has a `data-key` attribute which corresponds with a keyboard button.
+- The `<audio>` tags, these contain the links to the audio files that are to be played on the correct key presses.
 
-- CSS `playing` class & pre-defined style: The provided CSS file already has a `playing`
-    class defined with some rules in it. We will apply this class to the correct
+## CSS
+```CSS
+.keys {/*
+  set display to flex
+  cover the whole viewport height
+  // okay - not really interesting
+*/}
+
+.key {
+  /*  evenly spaced flex items */
+  transition: all .07s ease;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+```
+- CSS `playing` class & pre-defined style: We will apply this class to the correct
     element, depending on the key pressed by the user, and remove it once animation
     is finished.
-
-And that's...pretty much all we should need from the HTML & CSS files. We can use
-  the `data-key` attributes to match up the correct audio clip with the div element,
-  and we can use the `playing` class to add that temporary highlight/border.
- ### Steps: 
+- These main properties involved with the animation - the `transition` on the `key` class, and the `playing` class that does the transform.
+- We can use the `data-key` attributes to match up the correct audio clip with the div element, and we can use the `playing` class to add that temporary highlight/border.
+## Javascipt 
 #### 1. Add an event to our keys when they are pressed.
 `window.addEventListener('keydown', playSound)`
 

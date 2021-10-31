@@ -1,4 +1,4 @@
-# 🍦 JavaScript30 Coding Challenge
+# 🍦 JavaScript30 Coding Challenge [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=JavaScript30%20by%20Wesbos&url=https://github.com/Mitzelldone/JavaScript30&via=Donee96&hashtags=JavaScript30)
 ![JavaScript30](./The%2030%20Projects/images/JavaScript30.PNG)
 
 > - **Creator:** [Wes Bos](https://github.com/wesbos)

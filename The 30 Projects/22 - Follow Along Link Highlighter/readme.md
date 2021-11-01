@@ -1,5 +1,6 @@
 # Follow along link highlight
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/22%20-%20Follow%20Along%20Link%20Highlighter/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/22.demo.gif)
 Today we learn how to make cool follow along link highlights in JavaScript.The idea is to create an highlight that moves from one link to another on hover, in a smooth animated fashion.
 
 ---
@@ -21,7 +22,7 @@ We'll achieve the highlight with an underlying `span.highlight` **element**. The
 }
 ```
 
-#### Adding the **element** on to the DOM via JS
+### Adding the **element** on to the DOM via JS
 
 This creates an `span` element and adds the class 'highlight' to the DOM. Then `appendsChild()` the element to the end of the document body.
 
@@ -31,7 +32,7 @@ highlight.classList.add('highlight');
 document.body.appendChild(highlight);
 ```
 
-#### Now to figure when there is an hover
+### Now to figure when there is an hover
 
 ```Javascript
 const triggers = document.querySelectorAll('a');

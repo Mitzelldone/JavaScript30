@@ -1,4 +1,4 @@
-# Native Speech Recognition
+# Native Speech Recognition 🎤
 🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/20%20-%20Speech%20Detection/index.html)
 
 

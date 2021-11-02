@@ -1,5 +1,5 @@
 # Speech Synthesis (Text-to-Speech)
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects23%20-%20Speech%20Synthesis/index.html)
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/23%20-%20Speech%20Synthesis/index.html)
 ![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/23.demo.png)
 Today we'll learn how to do speech synthesis (text to speech) with JavaScript. Web Speech API [@ MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API);
 

@@ -1,5 +1,6 @@
 # Sticky Nav
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/24%20-%20Sticky%20Nav/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/24.demo.png)
 Today we'll learn how to make a sticky nav in JS.
 
 ---

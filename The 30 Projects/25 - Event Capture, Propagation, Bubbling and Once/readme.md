@@ -1,4 +1,6 @@
 # Event Capture, Propagation, Bubbling and Once
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/25.demo.png)
 
 We'll just be trying out different exercises to figure out how events in the browser work!
 
@@ -88,7 +90,7 @@ divs.forEach(div => div.addEventListener('click', logAll, {capture:true}))
 
 Hopefully the above example helps you visualize what is happening! The phase object is derived from the phase to number mapping on [this page](https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase).
 
-## Stop Propagation `event.stopPropagatio()
+## Stop Propagation `event.stopPropagatio()`
 
 `Event.stopPropagation()` Prevents further propagation of the current event in the capturing and bubbling phases.
 

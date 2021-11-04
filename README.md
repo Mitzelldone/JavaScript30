@@ -36,5 +36,6 @@ I created this respitory to keep track of my progress and documentation in the J
 21. [Geolocation based Speedometer and Compass 🧭](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/21%20-%20Geolocation)
 22. [Follow along link highlight](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/22%20-%20Follow%20Along%20Link%20Highlighter)
 23. [Speech Synthesis (Text-to-Speech) 💻🗣️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/23%20-%20Speech%20Synthesis)
+24. [Sticky Nav](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/24%20-%20Sticky%20Nav)
 ## Credits
 Documentation source : [Amelie](https://github.com/amelieyeh/JS30), [discoverdev.io](https://www.discoverdev.io/blog/series/js30/) and [Nitish Dayal](https://github.com/nitishdayal/JavaScript30).

@@ -1,10 +1,11 @@
 # Sticky Nav
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/24%20-%20Sticky%20Nav/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/24.demo.png)
 Today we'll learn how to make a sticky nav in JS.
 
 ---
 
-We'll be manipulating the `<nav> element.
+We'll be manipulating the `<nav>` element.
 
 ```Javascript
  <!-- heading before the nav -->
@@ -35,7 +36,7 @@ const nav = document.querySelector('#main');
 let topOfNav = nav.offsetTop;
 
 function fixNav() {
-    //console.log(topOfNav, window.scrollY); // To ss nav's top position related to the top of window
+    //console.log(topOfNav, window.scrollY);
 }
 
 window.addEventListener('scroll', fixNav);
@@ -70,7 +71,9 @@ body.fixed-nav nav {
 }
 ```
 
-**Problem:** Now when the position of the `nav` element is fixed, the space it occupies goes free for other elements to reflow into. Hence along with the `fixed-nav class, we add and remove the padding `document.body.style.paddingTop` equivalent to the height of the nav bar.
+ *Problem:* Now when the position of the `nav` element is fixed, the space it occupies goes free for other elements to reflow into. 
+
+Hence along with the `fixed-nav` class, we add and remove the padding `document.body.style.paddingTop` equivalent to the height of the nav bar.
 
 ## More styling
 

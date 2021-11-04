@@ -1,5 +1,5 @@
 # Event Capture, Propagation, Bubbling and Once
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/index.html)
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/index.html)
 ![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/25.demo.png)
 
 We'll just be trying out different exercises to figure out how events in the browser work!

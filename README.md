@@ -38,5 +38,6 @@ I created this respitory to keep track of my progress and documentation in the J
 23. [Speech Synthesis (Text-to-Speech) 💻🗣️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/23%20-%20Speech%20Synthesis)
 24. [Sticky Nav](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/24%20-%20Sticky%20Nav)
 25. [Event Capture, Propagation, Bubbling and Once](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once)
+26. [Stripe dropdown follow-along navigation](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/26%20-%20Stripe%20Follow%20Along%20Nav)
 ## Credits
 Documentation source : [Amelie](https://github.com/amelieyeh/JS30), [discoverdev.io](https://www.discoverdev.io/blog/series/js30/) and [Nitish Dayal](https://github.com/nitishdayal/JavaScript30).

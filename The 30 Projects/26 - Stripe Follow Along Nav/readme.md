@@ -1,5 +1,6 @@
 # Stripe dropdown follow-along navigation
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/26%20-%20Stripe%20Follow%20Along%20Nav/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/26.demo.gif)
 ---
 
 The HTML we interact with is the `nav.top` element.

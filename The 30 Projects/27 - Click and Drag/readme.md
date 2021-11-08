@@ -1,5 +1,6 @@
 # Click and Drag to Scroll
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/27%20-%20Click%20and%20Drag/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/27.demo.gif)
 Today we make a pretty neat click and drag to scroll interface and you will learn a whole lot about JavaScript events!
 
 ---

@@ -105,7 +105,7 @@ slider.scrollLeft = scrollLeft - (e.pageX - startX);
 - `e.pageX` give the new x-position.
 - `startX` give us the initial x-position before the drag began.
 - `e.pageX - startX` will give us the distance moved horizontally.
-- Then we subtract the delta (e.pageX -startX) from the `scrollLeft.
+- Then we subtract the delta (e.pageX -startX) from the `scrollLeft`.
 - We would have added the delta if we wanted the scroll to move in the direction of the mouse drag.
 
 We can adjust the sensitivity by multiplying the delta with a positive number great than 1.

@@ -1,5 +1,6 @@
 # Click and Drag to Scroll
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/27%20-%20Click%20and%20Drag/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/27.demo.gif)
 Today we make a pretty neat click and drag to scroll interface and you will learn a whole lot about JavaScript events!
 
 ---
@@ -104,7 +105,7 @@ slider.scrollLeft = scrollLeft - (e.pageX - startX);
 - `e.pageX` give the new x-position.
 - `startX` give us the initial x-position before the drag began.
 - `e.pageX - startX` will give us the distance moved horizontally.
-- Then we subtract the delta (e.pageX -startX) from the `scrollLeft.
+- Then we subtract the delta (e.pageX -startX) from the `scrollLeft`.
 - We would have added the delta if we wanted the scroll to move in the direction of the mouse drag.
 
 We can adjust the sensitivity by multiplying the delta with a positive number great than 1.

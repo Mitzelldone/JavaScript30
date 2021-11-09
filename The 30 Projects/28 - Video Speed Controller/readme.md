@@ -7,14 +7,14 @@
 We'll be building a video speed controller where the user can control the video speed just by hovering the mouse over the controller bar.
 
 The **HTML** we have
-
+```HTML
   <div class="wrapper">
     <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
     <div class="speed">
       <div class="speed-bar">1×</div>
     </div>
   </div>
-
+```
 - `video.flex` is the video element whose playback rate we'll change.
 - The `div.speed` element is the speed controller. - The `div.speed-bar` is the current playback speed indicator.
 

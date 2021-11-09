@@ -1,5 +1,6 @@
 # Video Speed Controller UI 🎚️
-
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/28%20-%20Video%20Speed%20Controller/index.html)
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/28.demo.gif)
 ---
 
 We'll be building a video speed controller where the user can control the video speed just by hovering the mouse over the controller bar.

@@ -130,7 +130,7 @@ document.customForm.addEventListener('submit', function(e) {
 });
 ```
 
-[NOTICE] we can directly select as document.elementName if an element has a name attribute in the DOM of HTML (in this case is document.customForm, the customForm is a name attribute of <form> element)
+[NOTICE] we can directly select as document.elementName if an element has a name attribute in the DOM of HTML (in this case is document.customForm, the customForm is a name attribute of `<form>` element).
 
 We prevent the default action, get the value (represents minutes) from the text input and then call the timer. We then reset the form to empty the text field.
 

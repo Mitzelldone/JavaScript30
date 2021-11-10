@@ -1,5 +1,6 @@
 # Countdown timer
 🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/29%20-%20Countdown%20Timer/index.html)
+
 ![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/29.demo.gif)
 ---
 

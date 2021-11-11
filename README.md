@@ -42,5 +42,6 @@ I created this respitory to keep track of my progress and documentation in the J
 27. [Click and Drag to Scroll](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/27%20-%20Click%20and%20Drag)
 28. [Video Speed Controller UI 🎚️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/28%20-%20Video%20Speed%20Controller)
 29. [Countdown timer](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/29%20-%20Countdown%20Timer)
+30. [Whack a mole 🕹️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/30%20-%20Whack%20A%20Mole)
 ## Credits
 Documentation source : [Amelie](https://github.com/amelieyeh/JS30), [discoverdev.io](https://www.discoverdev.io/blog/series/js30/) and [Nitish Dayal](https://github.com/nitishdayal/JavaScript30).

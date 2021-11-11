@@ -1,4 +1,4 @@
-# Whack a mole
+# Whack a mole 🕹️
 
 Today we'll build whack a mole game from scratch in vanilla JS!
 

@@ -1,5 +1,7 @@
 # Countdown timer
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/29%20-%20Countdown%20Timer/index.html)
 
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/29.demo.gif)
 ---
 
 All the HTML and CSS is already given to us,
@@ -128,7 +130,7 @@ document.customForm.addEventListener('submit', function(e) {
 });
 ```
 
-[NOTICE] we can directly select as document.elementName if an element has a name attribute in the DOM of HTML (in this case is document.customForm, the customForm is a name attribute of <form> element)
+[NOTICE] we can directly select as document.elementName if an element has a name attribute in the DOM of HTML (in this case is `document.customForm`, the customForm is a name attribute of `<form>` element).
 
 We prevent the default action, get the value (represents minutes) from the text input and then call the timer. We then reset the form to empty the text field.
 

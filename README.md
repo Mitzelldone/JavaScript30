@@ -41,5 +41,6 @@ I created this respitory to keep track of my progress and documentation in the J
 26. [Stripe dropdown follow-along navigation](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/26%20-%20Stripe%20Follow%20Along%20Nav)
 27. [Click and Drag to Scroll](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/27%20-%20Click%20and%20Drag)
 28. [Video Speed Controller UI 🎚️](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/28%20-%20Video%20Speed%20Controller)
+29. [Countdown timer](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/29%20-%20Countdown%20Timer)
 ## Credits
 Documentation source : [Amelie](https://github.com/amelieyeh/JS30), [discoverdev.io](https://www.discoverdev.io/blog/series/js30/) and [Nitish Dayal](https://github.com/nitishdayal/JavaScript30).

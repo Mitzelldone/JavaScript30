@@ -85,6 +85,7 @@ const bornInFifteen = inventors.filter(inventor => (inventor.year >= 1500 && inv
 
 console.table(bornInFifteen);
 ```
+![1](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/Images/4.img1.png)
 
 ## Array.prototype.map()
 
@@ -129,6 +130,7 @@ map(function(element, index, array) { ... }, thisArg)
 const names = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
 console.log(names)
 ```
+![2](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/Images/4.img2.png)
 
 ## Array.prototype.sort()
 
@@ -182,6 +184,7 @@ const sorted = inventors.sort((a, b) => b.year - a.year;
 
 console.table(sorted)
 ```
+![3](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/Images/4.img3.png)
 
 ## Array.prototype.reduce()
 
@@ -237,7 +240,23 @@ console.log(years)
 // Expected output : Total= 861
 ```
 
+
 ### 🟨Task: Sort the inventors by years lived?
+
+```Javascript
+const oldest = inventors.sort(function(a,b) {
+    const lastGuy = a.passed - a.year;
+    const nextGuy = b.passed - b.year;
+    if(lastGuy > nextGuy) {
+        return -1;
+    } else {
+        return 1;
+    }
+}); 
+
+console.table(oldest)
+```
+![4](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/Images/4.img4.png)
 
 ## Exercise with map and filter
 
@@ -284,6 +303,7 @@ const sorted = people.sort((p1, p2) => {
 })
 console.table(sorted)
 ```
+![5](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/Images/4.img5.png)
 
 ## Reduce Excercise
 
@@ -320,3 +340,4 @@ const transportation = data.reduce(function(obj, item) {
 
 console.table(transportation);
 ```
+![6](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/04%20-%20Array%20Cardio%20Day%201/Images/4.img6.png)

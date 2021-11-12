@@ -1,15 +1,8 @@
 # JavaScript Drum Kit🥁
 
-<<<<<<< HEAD
-
-### 👉PLAY THE DRUM [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/01%20-%20JavaScript%20Drum%20Kit/index.html)
-
-=======
 
 ### 🟥PLAY THE DRUM [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/01%20-%20JavaScript%20Drum%20Kit/index.html)
-
-> > > > > > > cce7ad53c55f7977022453d7253fa83792e02f3b
-> > > > > > > ![demo](../01%20-%20JavaScript%20Drum%20Kit/demo.PNG)
+![demo](../01%20-%20JavaScript%20Drum%20Kit/demo.PNG)
 
 ---
 
@@ -45,7 +38,7 @@ The main content is in the `div.keys` tag which contains the all the `div.key` e
 - Each `div.key` (`<div class="key" data-key="...">`) and `audio` element in the provided HTML file has a `data-key` attribute which corresponds with a keyboard button.
 - The `<kbd>` tag is essentially a span which is supposed to signify "user input from a keyboard, voice input, or any other text entry device", it's more to do with semantics than anything else!
 
-<kbd>: The Keyboard Input element @[MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd).
+The Keyboard Input element @[MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd).
 
 ```HTML
 <audio data-key="65" src="sounds/clap.wav"></audio>
@@ -84,7 +77,7 @@ The main content is in the `div.keys` tag which contains the all the `div.key` e
 
 # Javascipt
 
-## 1. Add an event to our keys when they are pressed.
+### 1. Add an event to our keys when they are pressed.
 
 `window.addEventListener('keydown', playSound)`
 
@@ -93,7 +86,7 @@ Add an event listener to the entire window object that is listening for a `keydo
 - `playSound()` is a listener for `keydown` events registered using `window.addEventListener`.
 - `window` is the global object in a browser, or the root object of the DOM.
 
-## 2. Create a function with the name that you decided on in step 1 which is `playSound`.
+### 2. Create a function with the name that you decided on in step 1 which is `playSound`.
 
 ```Javascript
 function playSound(e) {
@@ -127,13 +120,13 @@ How do we prevent delay playing sound, if we keep hitting a key?
 - `audio.currentTime = 0` rewind to the start.
 - `key.classList.add('playing')` for animation(transition).
 
-## 3. Declare & define a variable which will reference all the HTML elements on our page with a class `key`.
+### 3. Declare & define a variable which will reference all the HTML elements on our page with a class `key`.
 
 ```
 const keys = document.querySelectorAll('.keys');
 ```
 
-## 4. Iterate through the HTML elements and add an _event listener_ to each one that will fire on the `transitionend` event. Provide another function (name of your choice) as the second argument which will be responsible for **removing** the `playing` class.
+### 4. Iterate through the HTML elements and add an _event listener_ to each one that will fire on the `transitionend` event. Provide another function (name of your choice) as the second argument which will be responsible for **removing** the `playing` class.
 
 ```
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
@@ -143,7 +136,7 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 - `=>` is ES6 syntax.
 
-## 5. Transitionend Event
+### 5. Transitionend Event
 
 use `item.classList.add('className')` to add class when key pressed. In our case, `key.classList.add('playing')`.
 

@@ -1,5 +1,6 @@
 # Whack a mole 🕹️
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/30%20-%20Whack%20A%20Mole/index.html)
+
+### 🟥**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/30%20-%20Whack%20A%20Mole/index.html)
 
 ![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/30%20-%20Whack%20A%20Mole/images/30.demo.gif)
 Today we'll build whack a mole game from scratch in vanilla JS!

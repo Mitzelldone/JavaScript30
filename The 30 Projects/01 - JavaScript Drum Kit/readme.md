@@ -1,8 +1,15 @@
 # JavaScript Drum Kit🥁
 
+<<<<<<< HEAD
+
 ### 👉PLAY THE DRUM [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/01%20-%20JavaScript%20Drum%20Kit/index.html)
 
-![demo](../01%20-%20JavaScript%20Drum%20Kit/demo.PNG)
+=======
+
+### 🟥PLAY THE DRUM [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/01%20-%20JavaScript%20Drum%20Kit/index.html)
+
+> > > > > > > cce7ad53c55f7977022453d7253fa83792e02f3b
+> > > > > > > ![demo](../01%20-%20JavaScript%20Drum%20Kit/demo.PNG)
 
 ---
 

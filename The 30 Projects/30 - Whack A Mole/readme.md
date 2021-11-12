@@ -1,5 +1,7 @@
-# Whack a mole
+# Whack a mole 🕹️
+🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/30%20-%20Whack%20A%20Mole/index.html)
 
+![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/30%20-%20Whack%20A%20Mole/images/30.demo.gif)
 Today we'll build whack a mole game from scratch in vanilla JS!
 
 ---
@@ -117,7 +119,7 @@ function startGame() {
 }
 ```
 
-The game runs for 10 seconds. `timeUp` keeps track whether the game is running. Score is reset to zero and peep() is called. Then a timeout is set to run at 10 seconds, which marks `timeUp` as true and stop the game.
+The game runs for 10 seconds. `timeUp` keeps track whether the game is running. Score is reset to zero and `peep()` is called. Then a timeout is set to run at 10 seconds, which marks `timeUp` as true and stop the game.
 
 Now, we need to make a tiny modification to the peep() function,
 
@@ -131,7 +133,7 @@ if (!timeUp) peep();
 
 ## Scoring mechanism
 
-The bonk() function tracks the hits and updates the score.
+The `bonk()` function tracks the hits and updates the score.
 
 ```Javascript
 function bonk(e) {
@@ -144,4 +146,4 @@ function bonk(e) {
 moles.forEach(mole => mole.addEventListener('click', bonk));
 ```
 
-- Each mole has a click event listener registered. The `bonk() is checks if the mouse click is trusted (i.e not scripted / automated in some way), and then updates the score and the score board.
+- Each mole has a click event listener registered. The `bonk()` is checks if the mouse click is trusted (i.e not scripted / automated in some way), and then updates the score and the score board.

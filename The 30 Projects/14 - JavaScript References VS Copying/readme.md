@@ -1,28 +1,34 @@
 # JavaScripts Reference vs Copying
-- We're learning about JavaScript variable referencing vs. copying. 
+
+- We're learning about JavaScript variable referencing vs. copying.
 - If you want a full-blown explanation, take a look at [chapter 11, section 2 of 'JavaScript: The Definitive Guide'](https://docstore.mik.ua/orelly/webprog/jscript/ch11_02.htm).
+
 #
 
-Lets start with **strings** and **numbers**
+---
+
+## 1. Strings, Numbers and Booleans reference and copy
+
+Start with strings, numbers and booleans.
 
 ```JavaScript
-start with strings, numbers and booleans
 let age = 100; //numbers
 let age2 = age;
 console.log(age, age2); //100, 100
 age = 200;
 console.log(age, age2); //200, 100
 
-let name = 'Wes'; //string
+let name = 'Mitzelldone'; //string
 let name2 = name;
 console.log(name, name2); //wes, wes
-name = 'wesley';
+name = 'Don';
 console.log(name, name2); //wesley, wes
 ```
 
-strings and numbers unchangeble, we can reassign variables to newer strings/numbers, but we can't manipulate values itself.
+- It won't change the original one.
+- We can reassign variables to newer strings/numbers, but **we can't manipulate values itself**.
 
-#
+## 2. Arrays reference and copy
 
 Let's say we have an **array**
 
@@ -52,7 +58,9 @@ console.log(players, team);
 
 Oh no - we have edited the original array too! It updated the `player[3]`. Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
-So, how do we fix this? We take a copy instead! 4 ways below:-
+So, how do we fix this? We take a copy instead!
+
+4 ways below:-
 
 ```JavaScript
 // slice copies all the elements to the new array
@@ -71,7 +79,7 @@ const team5 = Array.from(players);
 
 Players array should remains unaffected.
 
-#
+## 3. Objects reference and copy
 
 Objects are similar to arrays, let's say we have a person object. Objects reference and copy.
 
@@ -82,7 +90,7 @@ const person = {
 };
 ```
 
-We make a copy, and it will affect the original
+We make a copy, and it will affect the original as well.
 
 ```JavaScript
 const captain = person;
@@ -100,7 +108,12 @@ console.log(cap2);
 
 We can use the `Object.assign()` method to create a clone.
 
-This is only 1 level deep - both for Arrays and Objects. You can use a library like lodash has a cloneDeep method, but you should think twice before using it (performance reasons, plus you probably wouldn't need it)!
+- Object.assign(): first argument is an empty object ({}), second is the object (person) to fold in, third is the values we want to additionally fold in ({ number: 100 }), it difference between slice() and splice() in Arrays
+
+### 4. Deep Copy `JSON.stringify()`
+
+`
+This is only for 1 level deep - both for Arrays and Objects. You can use a library like lodash has a cloneDeep method, but you should think twice before using it (performance reasons, plus you probably wouldn't need it)!
 
 ```JavaScript
 const wes = {

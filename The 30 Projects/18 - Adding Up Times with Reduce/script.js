@@ -1,6 +1,7 @@
 // Declare a constant and define as an ARRAY of all items with a 'data-key'
 const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
 
+
 // Turn NodeList into an array of actual time strings.
 // I took the times nodes and i mapped it which means. 
 //Array of list items into an array of strings.
@@ -23,5 +24,10 @@ secondsLeft = secondsLeft % 60;
 
  
 console.log("Playlist Total Time: " + (hours < 10 ? "0" + hours : hours) + ":" + (mins < 10 ? "0" + mins : mins) + ":" + (secondsLeft < 10 ? "0" + secondsLeft : secondsLeft));
+
+// Display Total Time on HTML
+const totalTime = document.querySelector('.total');
+totalTime.innerHTML = `<span>Total time <b>${hours}</b>:<b>${mins}</b>:<b>${secondsLeft}</span>`;
+
 
     

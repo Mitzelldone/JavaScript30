@@ -1,11 +1,15 @@
-## HTML5 Canvas 🌈
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/08%20-%20Fun%20with%20HTML5%20Canvas/index.html)
+# HTML5 Canvas 🌈
+
+## 🟥DEMO: [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/08%20-%20Fun%20with%20HTML5%20Canvas/index.html)
 
 ![demo](../08%20-%20Fun%20with%20HTML5%20Canvas/demo.gif)
 
 ## Task
+
 We're given an HTML page with a canvas element in which the user should be able to click and drag their mouse to draw. When the user clicks+drags their mouse, they should see a line being drawn out on the canvas that starts from the original mouse location and ends where the user released the mouse click. This line should be multicolor, and should increase and decrease in width.
+
 ## Guide
+
 ### Canvas
 
 [`Canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) is added in HTML5, the HTML `<canvas>` element can be used to draw graphics via scripting in JavaScript. It's also used by WebGL to draw hardware-accelerated 3D.
@@ -28,6 +32,7 @@ We're given an HTML page with a canvas element in which the user should be able 
 in our tutorial we use these:
 
 - Properties
+
   - `ctx.lineCap`: the shape of the stroke, `round` | `butt` | `square`.
   - `ctx.lineJoin`: determines how two connecting segments (of lines, arcs or curves) with non-zero lengths in a shape are joined together), `bevel` | `round` | `miter`.
   - `ctx.lineWidth`: sets the thickness of lines in space units.
@@ -35,9 +40,7 @@ in our tutorial we use these:
 
 - Methods
   - `ctx.beginPath()`: starts a new path by emptying the list of sub-paths. Call this method when you want to create a new path.
-  - `ctx.stroke()`: strokes the current or given path with the current stroke style using the non-zero winding rule.
-  -`ctx.moveTo()`: moves the starting point of a new sub-path to the (x, y) coordinates.
-  -`ctx.lineTo()`: connects the last point in the sub-path to the x, y coordinates with a straight line(but does not actually draw it).
+  - `ctx.stroke()`: strokes the current or given path with the current stroke style using the non-zero winding rule. -`ctx.moveTo()`: moves the starting point of a new sub-path to the (x, y) coordinates. -`ctx.lineTo()`: connects the last point in the sub-path to the x, y coordinates with a straight line(but does not actually draw it).
 
 ### HSL
 
@@ -68,6 +71,7 @@ hsl(240,100%,50%)    /* blue */
 The advantage of HSL over RGB is that it is far more intuitive: you can guess at the colors you want, and then tweak. It is also easier to create sets of matching colors (by keeping the hue the same and varying the lightness/darkness, and saturation).
 
 in our tutorial
+
 - how to implement a rainbow-like gredient color?
 
 ```
@@ -105,7 +109,8 @@ ctx.stroke();
 
 [lastX, lastY] = [e.offsetX, e.offsetY];
 ```
-- [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
+
+- [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
   `[lastX, lastY] = [e.offsetX, e.offsetY]`
 
@@ -124,6 +129,5 @@ if(direction) {
 ```
 
 ## Summary
+
 Element: mousemove event ([MDN Guide](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event))
-
-

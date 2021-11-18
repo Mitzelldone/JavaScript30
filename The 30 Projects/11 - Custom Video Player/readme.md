@@ -1,10 +1,10 @@
-## HTML5 Custom Video Player 🐰
+# HTML5 Custom Video Player 🐰
 
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/11%20-%20Custom%20Video%20Player/index.html)
+## 🟥 DEMO: [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/11%20-%20Custom%20Video%20Player/index.html)
 
 ![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/11.demo.PNG)
 
-#
+---
 
 This project we won't be touching the HTML or CSS, but we need to understand the html structure.
 

@@ -1,12 +1,14 @@
-# 14 Console tricks 
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/09%20-%20Dev%20Tools%20Domination/index.html)
+# 14 Console tricks
+
+## 🟥 DEMO: [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/09%20-%20Dev%20Tools%20Domination/index.html)
 
 ![demo](../09%20-%20Dev%20Tools%20Domination/Capture.PNG)
+
 1. Making a break point to see what's going on to the element.
 2. Regular
 3. Interpolated
-    - Dynamically update the string value logged out using %s
-    - Interpolation using ES6 template strings
+   - Dynamically update the string value logged out using %s
+   - Interpolation using ES6 template strings
 4. Styled
 5. console.warn
 6. console.error

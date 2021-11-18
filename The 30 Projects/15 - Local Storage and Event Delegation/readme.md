@@ -1,6 +1,8 @@
 # LocalStorage and Event Delegation
-🟡**DEMO:** [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/15%20-%20Local%20Storage%20and%20Event%20Delegation/index.html)
 
+## 🟥DEMO: [HERE](https://mitzelldone.github.io/JavaScript30/The%2030%20Projects/15%20-%20Local%20Storage%20and%20Event%20Delegation/index.html)
+
+---
 
 ![demo](https://github.com/Mitzelldone/JavaScript30/blob/main/The%2030%20Projects/images/15.demo.gif)
 We'll be building a to-do list of sorts, with local storage to persist the information across a refresh or reload.
@@ -132,7 +134,7 @@ function addItem(e){
 - `addItem` uses `populatedList` to render all the current items.
 - here the `.join('')` takes the array (which is `places.map()` made) and turn into a string and then pass it to `.innerHTML`.
 - don't forget to set the default `plates` as an empty array(or object), otherwise it will break up the javascript sometimes (in this case the `plates` is an array).
-> everytime we create an item, it calls `populateList()` and rerendering the entire list again instead of just update one single line, in this case is OK on performance, but practically just update one single line by using React or other frameworks is more efficient and helpful
+  > everytime we create an item, it calls `populateList()` and rerendering the entire list again instead of just update one single line, in this case is OK on performance, but practically just update one single line by using React or other frameworks is more efficient and helpful
 
 ## Toggle an item
 
@@ -187,7 +189,7 @@ function toggleDone(e) {
 function addItem(e) {
   //...
   localStorage.setItem('items', JSON.stringify(items));
-  populateList(items, itemsList); 
+  populateList(items, itemsList);
   //...
 }
 ```
@@ -197,10 +199,11 @@ Also we need to get the items from local storage when we load the page. We'll mo
 ```JavaScript
 const items = JSON.parse(localStorage.getItem('items')) || []; // const items is to check if there is something in localStorage and then we fall back to an empty array.
 ```
+
 ## Check and Reset
 
 ```JavaScript
-const massToggleButton = document.querySelectorAll('.mass-toggle')  
+const massToggleButton = document.querySelectorAll('.mass-toggle')
 
 //check/uncheck all
 function massToggle (e) {
@@ -208,7 +211,7 @@ function massToggle (e) {
     items.forEach((item) => item.done = status);
     populateList(items, itemsList); update the actual visibility part on html
     localStorage.setItem('items', JSON.stringify(items)); //everytime update will mirror to the localStorage
-    
+
 }
 massToggleButton.forEach((btns) => btns.addEventListener("click", massToggle))
 ```

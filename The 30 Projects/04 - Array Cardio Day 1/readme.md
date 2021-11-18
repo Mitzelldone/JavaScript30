@@ -91,7 +91,7 @@ console.table(bornInFifteen);
 
 The `[].map(transform_fn)` method **creates a new array** with the results of calling a provided function (`transform_fn`) on every element in the calling array.
 
-Learn more @ [MDN docs] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+Learn more @ [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 
 **JavaScript Demo: Array.map()**
 

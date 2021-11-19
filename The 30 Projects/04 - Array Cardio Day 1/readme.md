@@ -43,7 +43,7 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 
 The `filter(test_fn)` method creates a new array with all elements that pass the condition implemented by the provided function (`test_fn`).
 
-Each element of the array is iterated upon and passed to test_fn as an argument, if `test_fn` returns a truthy for the element, it is included in the new list, if it returns a falsey, it is not.
+Each element of the array is iterated upon and passed to `test_fn` as an argument, if `test_fn` returns a truthy for the element, it is included in the new list, if it returns a falsey, it is not.
 
 Learn more @ [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
 

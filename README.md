@@ -11,6 +11,10 @@
 ## About
 I created this respitory to keep track of my progress and documentation in the JavaScript 30 Day Challenge and commiting & logging what I have learnt on daily basis.
 
+## Javascript30 Demo
+### 🟥DEMO: [HERE](https://mitzelldone.github.io/Javascript30-Demo/index.html)
+![https://mitzelldone.github.io/Javascript30-Demo/index.html](https://github.com/Mitzelldone/Javascript30-Demo/blob/main/images/Demo.PNG)
+
 ## Table of Content
 
 1. [JavaScript Drum Kit 🥁](https://github.com/Mitzelldone/JavaScript30/tree/main/The%2030%20Projects/01%20-%20JavaScript%20Drum%20Kit)
